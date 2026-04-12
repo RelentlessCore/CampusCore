@@ -7,6 +7,13 @@ import * as schema from "../db/schema/auth.js";
 export const auth = betterAuth({
   secret: process.env.BETTER_AUTH_SECRET!,
   trustedOrigins: [process.env.FRONTEND_URL!, process.env.BETTER_AUTH_URL!],
+  advanced: {
+    defaultCookieAttributes: {
+      sameSite: "none",
+      secure: true,
+      httpOnly: true,
+    },
+  },
   database: drizzleAdapter(db, {
     provider: "pg",
     schema,
