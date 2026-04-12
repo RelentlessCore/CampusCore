@@ -1,8 +1,8 @@
 import { createAuthClient } from "better-auth/react";
-import { USER_ROLES } from "../constants";
+import { BACKEND_BASE_URL, USER_ROLES } from "../constants";
 
 export const authClient = createAuthClient({
-  baseURL: "https://university-fullstack.vercel.app",
+  baseURL: `${BACKEND_BASE_URL}/auth`,
   user: {
     additionalFields: {
       role: {
