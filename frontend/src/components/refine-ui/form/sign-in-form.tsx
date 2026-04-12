@@ -155,11 +155,11 @@ export const SignInForm = () => {
                 <div className="social-grid">
                   <Button
                     variant="outline"
-                    className="social-button"
+                    className="social-button cursor-pointer"
                     type="button"
                     onClick={() =>
                       authClient.signIn.social({
-                        provider: "google",
+                        provider: "github",
                         callbackURL: "/",
                       })
                     }
@@ -180,7 +180,7 @@ export const SignInForm = () => {
                   </Button>
                   <Button
                     variant="outline"
-                    className="social-button"
+                    className="social-button cursor-pointer"
                     type="button"
                     onClick={() =>
                       authClient.signIn.social({
