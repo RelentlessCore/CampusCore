@@ -6,13 +6,17 @@ import * as schema from "../db/schema/auth.js";
 
 export const auth = betterAuth({
   secret: process.env.BETTER_AUTH_SECRET!,
-  trustedOrigins: [process.env.FRONTEND_URL!, process.env.BETTER_AUTH_URL!],
+  baseURL: "https://university-fullstack.vercel.app",
+  trustedOrigins: [
+    "https://university-fullstack.vercel.app",
+    "https://university-fullstack-production.up.railway.app",
+  ],
   advanced: {
     defaultCookieAttributes: {
-      sameSite: "none",
+      sameSite: "lax",
       secure: true,
-      httpOnly: true,
     },
+    useSecureCookies: true,
   },
   database: drizzleAdapter(db, {
     provider: "pg",
