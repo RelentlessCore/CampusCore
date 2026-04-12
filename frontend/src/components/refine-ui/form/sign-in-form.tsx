@@ -1,5 +1,6 @@
 "use client";
 
+import { authClient } from "@/lib/auth-client";
 import { CircleHelp } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
@@ -156,6 +157,12 @@ export const SignInForm = () => {
                     variant="outline"
                     className="social-button"
                     type="button"
+                    onClick={() =>
+                      authClient.signIn.social({
+                        provider: "google",
+                        callbackURL: "/",
+                      })
+                    }
                   >
                     <svg
                       width="21"
@@ -175,6 +182,12 @@ export const SignInForm = () => {
                     variant="outline"
                     className="social-button"
                     type="button"
+                    onClick={() =>
+                      authClient.signIn.social({
+                        provider: "github",
+                        callbackURL: "/",
+                      })
+                    }
                   >
                     <svg
                       width="21"
