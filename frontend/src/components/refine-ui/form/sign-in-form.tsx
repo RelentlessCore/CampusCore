@@ -159,7 +159,7 @@ export const SignInForm = () => {
                     type="button"
                     onClick={() =>
                       authClient.signIn.social({
-                        provider: "github",
+                        provider: "google",
                         callbackURL: "/",
                       })
                     }
@@ -185,7 +185,7 @@ export const SignInForm = () => {
                     onClick={() =>
                       authClient.signIn.social({
                         provider: "github",
-                        callbackURL: "/",
+                        callbackURL: "https://university-fullstack.vercel.app",
                       })
                     }
                   >
