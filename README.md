@@ -111,14 +111,23 @@ CampusCore consolidates every core academic workflow into a single platform. Adm
 ### **Sign In Page**
 ![Sign In](./screenshots/sign-in.png)
 
+### **Register Page**
+![Register](./screenshots/register.png)
+
 ### **Admin Dashboard**
 ![Admin Dashboard](./screenshots/admin-dashboard.png)
 
 ### **Subjects Management**
 ![Subjects](./screenshots/subjects-management.png)
 
-### **Department Details**
-![Department Details](./screenshots/department-details.png)
+### **Departments List**
+![Departments](./screenshots/department-list.png)
+
+### **Faculty Directory**
+![Faculty](./screenshots/faculty-directory.png)
+
+### **Enrollments Management**
+![Enrollments](./screenshots/enrollments.png)
 
 ### **Classes List**
 ![Classes](./screenshots/classes-list.png)
@@ -126,17 +135,8 @@ CampusCore consolidates every core academic workflow into a single platform. Adm
 ### **Class Details with Invite Code**
 ![Class Details](./screenshots/class-details.png)
 
-### **Create a Class Form**
-![Create Class](./screenshots/create-class.png)
-
-### **Enrollments Management**
-![Enrollments](./screenshots/enrollments.png)
-
-### **Join Class by Invite Code**
-![Join Class](./screenshots/join-class.png)
-
-### **Faculty Directory**
-![Faculty](./screenshots/faculty-directory.png)
+### **Department Details**
+![Department Details](./screenshots/departments-details.png)
 
 ---
 
