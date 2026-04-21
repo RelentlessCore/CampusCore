@@ -138,6 +138,9 @@ CampusCore consolidates every core academic workflow into a single platform. Adm
 ### **Department Details**
 ![Department Details](./screenshots/departments-details.png)
 
+### **Multiple Devices View**
+![View](./screenshots/multiple-devices-view.png)
+
 ---
 
 ## 🚀 Why This Stands Out
